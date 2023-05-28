@@ -1,9 +1,12 @@
+import LoginLayout from '@/layouts/loginLayout'
 import React from 'react'
 
 const log = () => {
   return (
-    <div>{
-      const  }</div>
+    <div>
+      <LoginLayout/>
+      
+    </div>
   )
 }
 

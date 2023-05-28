@@ -1,12 +1,13 @@
 import React from 'react'
-import Layout from '../Layout'
+
 //icons
 import { HiCamera } from "react-icons/hi";
+import { HeaderLayout } from '@/layouts/headerLayout';
 
 function PerfilUser() {
   return (
   <div>
-    <Layout>  
+    <HeaderLayout>
         <div className='bg-secondary-100 p-8  text-gray-100 rounded-xl'>
        <h1 className='text-xl'>Profile</h1>
        <hr className='my-8 border-gray-500'></hr>
@@ -29,8 +30,8 @@ function PerfilUser() {
         </form>
         
         </div>
-        
-    </Layout>
+        </HeaderLayout>   
+   
     <div>
        
     </div>

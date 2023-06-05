@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { Children } from 'react'
 
 
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import { CiMenuFries } from "react-icons/ci"
 import Modal from './Modal';
+import Stepper from '@/components/Stepper';
+import StepperControl from '@/components/StepperControl';
 
 
 
 
- const LoginLayout = ({children}) => {
+ const LoginLayout = () => {
   return (
     
-    <div> 
-       
+    <div className=''> 
+   
         <header className='bg-[#171C26] text-[#2F384C] fixed pl-[120px] w-full flex items-start justify-between p-6'>
+        
  <nav className='flex items-center gap-5'>
  <a href='http://localhost:3000/gameList' className='bg-blue-600 px-4 py-2 rounded-xl'>games</a>
           <a href='http://localhost:3000/manage' className='bg-blue-600 px-4 py-2 rounded-xl'>managers</a>
@@ -28,11 +31,12 @@ import Modal from './Modal';
            <MenuItem>Paste</MenuItem>
            <MenuItem>Paste</MenuItem>
            </Menu>
+
   </div>
+  <h1 className='bg-blue-300 pt-20'>Modal</h1>
 </header>
-<Modal>
-{children}
-</Modal>
+
+<Modal></Modal>
         </div>
   )
 }

@@ -13,17 +13,17 @@ const Index = () => {
 
 export default Index
 
-Index.getLayout = function getLayout(page) {
+Index.getLayout = function getLayout() {
   return (
     
     <div>
       index
      <LoginLayout>
        
-    {page}
+   
     </LoginLayout>
       
-    index 
+    
       
       </div>)
     }

@@ -3,11 +3,12 @@ import React from 'react'
 
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import { CiMenuFries } from "react-icons/ci"
+import Modal from './Modal';
 
 
 
 
- const LoginLayout = () => {
+ const LoginLayout = ({children}) => {
   return (
     
     <div> 
@@ -16,7 +17,7 @@ import { CiMenuFries } from "react-icons/ci"
  <nav className='flex items-center gap-5'>
  <a href='http://localhost:3000/gameList' className='bg-blue-600 px-4 py-2 rounded-xl'>games</a>
           <a href='http://localhost:3000/manage' className='bg-blue-600 px-4 py-2 rounded-xl'>managers</a>
-          <a href='#' className='bg-blue-600 px-4 py-2 rounded-xl'>followers</a>
+          <a href='http://localhost:3000' className='bg-blue-600 px-4 py-2 rounded-xl'>index</a>
  </nav>
  <div className=''>buscador</div>
  <div className='flex gap-x-6 px-8'> 
@@ -29,8 +30,9 @@ import { CiMenuFries } from "react-icons/ci"
            </Menu>
   </div>
 </header>
-
-
+<Modal>
+{children}
+</Modal>
         </div>
   )
 }

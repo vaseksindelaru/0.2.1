@@ -1,24 +1,33 @@
-import MainLayout from "@/layouts/gameLayout"
+import Modal from "@/layouts/Modal"
+import LoginLayout from "@/layouts/loginLayout"
 
 
+import React from 'react'
 
-
-
-export default function Home() {
-  return(
-  
-    <h1>HomePage</h1>)
-  
+const Index = () => {
+  return (
+    <div>
+    </div>
+  )
 }
 
-Home.getLayout = function getLayout(page) {
-return (
-  <MainLayout>
+export default Index
+
+Index.getLayout = function getLayout(page) {
+  return (
+    
+    <div>
+      index
+     <LoginLayout>
+       
     {page}
-  </MainLayout>
-)
+    </LoginLayout>
+      
+    index 
+      
+      </div>)
+    }
 
-}
 /*export async function getServerSideProps(){
   try{
 await conectardb()

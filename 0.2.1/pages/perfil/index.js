@@ -1,5 +1,5 @@
 import React from 'react'
-import PerfilUsers from '../components/PerfilUser'
+import PerfilUsers from '../../components/PerfilUser'
 
 function Perfil() {
   return (

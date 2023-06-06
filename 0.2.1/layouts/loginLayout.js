@@ -22,6 +22,7 @@ import StepperControl from '@/components/StepperControl';
           <a href='http://localhost:3000/manage' className='bg-blue-600 px-4 py-2 rounded-xl'>managers</a>
           <a href='http://localhost:3000' className='bg-blue-600 px-4 py-2 rounded-xl'>index</a>
  </nav>
+ <h1 className='bg-blue-300 relative my-10   p-[500px] '>Modal</h1>
  <div className=''>buscador</div>
  <div className='flex gap-x-6 px-8'> 
   <a href='http://localhost:3000/log' className='bg-red-600 px-4 py-2 rounded-xl'>login</a>
@@ -33,10 +34,11 @@ import StepperControl from '@/components/StepperControl';
            </Menu>
 
   </div>
-  <h1 className='bg-blue-300 pt-20'>Modal</h1>
+  
 </header>
 
 <Modal></Modal>
+
         </div>
   )
 }
